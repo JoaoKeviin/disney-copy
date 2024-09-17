@@ -457,8 +457,9 @@ font-size: 10px;
     justify-content: center;
 }
 
-picture img{
-    width: 85%;
+
+.imagem-tela img{
+    width: 75%;
 }
 
 .container-tela{
