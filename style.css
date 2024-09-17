@@ -279,7 +279,7 @@ picture img{
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 20px 0;
+    padding: 20px 0 155px;
 }
 
 .coluna {
@@ -328,6 +328,12 @@ picture img{
     width: 100%; 
 }
 
+.valor-padrao a:hover, .valor-premium a:hover{
+    background-color: rgb(9 210 219 / 82%);
+    transition: 0.7s;
+
+}
+
 .valor-padrao, .valor-premium {
     display: flex;
     flex-direction: column;
@@ -342,4 +348,43 @@ picture img{
 
 .plano-box1 img{
     width: 60%;
+}
+
+.coluna-caracteristica{
+    display: flex;
+    justify-content: space-evenly;
+    width: 82%;
+    border-bottom: 1px solid #aca0a0;
+    align-items: center;
+}
+
+
+
+.coluna-caracteristica .canais{
+    background-color: rgba(52, 44, 44, 0.248);
+    width: 31%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.coluna-caracteristica .esporte{
+    width: 40%;
+}
+
+.coluna-caracteristica .selecao{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 18%;
+height: 68px;
+padding: 0px 95px;
+}
+
+
+p span{
+display: flex;
+flex-direction: column;
+text-align: center;
+font-size: 10px;
 }
