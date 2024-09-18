@@ -154,7 +154,7 @@ section .content-container-background{
     color: #02172a;
     padding: 16.5px 24px;
     text-decoration: none;
-    width: 308px;
+    width: 100%;
 }
 
 .btn-padrao:hover, .btn-premium:hover {
@@ -193,7 +193,7 @@ p {
     color: #f9f9f9;
     cursor: pointer;
     padding: 0;
-    text-align: left;
+    text-align: inherit;
 }
 
 .content-container-background {
@@ -268,20 +268,9 @@ picture img{
 
 .container .texto-medio{
     width: 80%;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 0;
-    color: #f9f9f9;
-}
-
-.container .texto-pequeno {
-    font-weight: 400;
-    font-size: 16px;
-    margin-top: 24px;
-    color: #f9f9f9;
-    line-height: 1.2;
-    margin-bottom: 0;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .plano {
@@ -291,23 +280,6 @@ picture img{
     width: 100%;
     height: auto;
     padding: 20px 0 155px;
-}
-
-.plano h2 {
-    margin-top: 0;
-    font-size: 40px;
-    margin-bottom: 0;
-    color: #f9f9f9;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.plano p {
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 1.4;
-    margin-top: 24px;    
 }
 
 .coluna {
@@ -415,6 +387,83 @@ display: flex;
 flex-direction: column;
 text-align: center;
 font-size: 10px;
+}
+
+.content-serie {
+    align-items: center;
+    display: flex;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.content-serie-image {
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.text-serie-container {
+    position: absolute;
+    padding-top: 0;
+    box-sizing: border-box;
+    padding: 20px 2vw 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    padding-left: 5vw;
+    top: 0;
+    width: 40%;
+}
+
+.content-serie-text-title {
+    margin-top: 0;
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #f9f9f9;
+    line-height: 1.2;
+}
+
+.content-serie-text-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 24px;
+    color: #f9f9f9;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.spacer {
+    margin-top: 80px;
+}
+
+.tela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 776px;
+    flex-direction: column;
+}
+
+.imagem-tela{
+    display: flex;
+    justify-content: center;
+}
+
+
+.imagem-tela img{
+    width: 75%;
+}
+
+.container-tela{
+    text-align: center;
 }
 
 .content-serie {
@@ -597,16 +646,16 @@ footer {
 
 .footer-container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: row wrap; 
+    justify-content: center; 
+    gap: 20px; 
     margin: 0 auto;
     padding: 0;
-    max-width: 1024px;
+    max-width: 1200px; 
 }
 
 .footer-block {
     display: flex;
-    flex-direction: column;
     padding: 26px 8px;
     gap: 12px;
 }
@@ -616,7 +665,7 @@ footer {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 1000px;
 }
 
 .group-footer {
@@ -674,23 +723,26 @@ footer {
     color: #040714;
 }
 
+
 .footer-block-row {
     display: flex;
+    flex: 1; 
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
     margin: 0;
 }
 
 .complex-row {
-    flex-flow: row;
-    gap: 24px;
+    display: flex;
+    gap: 24px; 
     width: 100%;
+    justify-content: space-between;
 }
 
 .collection-container {
-    border-bottom: none;
-    flex: 1;
+    flex: 1 1 200px;
+    max-width: 250px; 
+    margin-bottom: 20px;
 }
 
 .collection-title {
@@ -699,46 +751,149 @@ footer {
     justify-content: space-between;
     margin: 0;
     width: 100%;
+    font-size: 24px;
 }
-
 .collection-title h6 {
     font-weight: 400;
-    margin: 0;
-    padding: 0;
+    margin: 0 0 10px;
     color: #f9f9f9;
     line-height: 1.2;
 }
-
-.collection-link {
-    flex-flow: row;
-    gap: 24px;
-    display: flex;
-    max-height: none;
+.collection-group {
+    box-sizing: border-box;
     width: 100%;
 }
-
-.collection-group {
-    flex: 1;
-    box-sizing: border-box;
-
+.collection-link {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .group-footer {
-    gap: 20px;
-    margin-bottom: 0;
-    flex-flow: column;
-    text-align: left;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column; 
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .group-footer a {
-    margin: 0;
-    padding: 0;
-    display: block;
-    cursor: pointer;
-    text-decoration: none;
     color: #f9f9f9;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+
+
+@media (max-width:890px ){
+
+    .container .texto-medio {
+
+        font-size: 17px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    .valor-padrao a, .valor-premium a{
+        padding: 14px 14px;
+    }
+}
+
+@media (max-width: 426px){
+
+    .content-container img {
+        max-width: 123px;
+    }
+
+
+
+    .nav-list .nav-list-item .btn-login {
+        font-size: 12px;
+        height: 40px;
+    }
+    .content-container .text-title {
+    font-size: 28px;
+    }
+
+
+    .content-container .text-subtitle {
+    font-size: 21px;
+    }
+    .btn-padrao, .btn-premium {
+    padding: 8.5px 0px;
+    }
+    .btn-padrao span, .btn-premium span{
+    font-size: 13px;
+    line-height: 13px;
+    }
+
+    .link-span a {
+        font-size: 10px
+    }
+
+    .container .texto-medio {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 7px;
+    }
+
+    .container{
+        height: 69%;
+        padding: 1px 17px;
+    }
+
+    .hint {
+    height: 77px;
+    width: 35px;
+    }
+
+    .coluna{
+       gap: 24px;
+    }
+
+    .coluna-caracteristica{
+        justify-content: space-between;
+    }
+    .coluna-caracteristica .selecao{
+    padding: 0px 0px;
+    }
+
+    .coluna-caracteristica .esporte {
+        width: 19%;
+    }
+
+    p span{
+        font-size: 6px;
+    }
+
+    .content-serie-text-title {
+        font-size: 19px;
+    }
+
+    .content-serie-text-subtitle {
+        font-size: 10px;
+    }
+
+    .text-serie-container {
+        justify-content: initial;
+    }
+
+    .container-tela p{
+            font-size: 10px;
+    }
+
+    .container-faq h2 {
+    font-size: 25px
+    }
+    .accordion-btn {
+    font-size: 13px;
+    }
+    .complex-row{
+        display: block;
+    }
+    
 }
