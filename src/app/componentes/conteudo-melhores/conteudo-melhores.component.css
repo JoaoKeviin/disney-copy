@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    color: white;
+    height: 71%;
+    padding: 7px 89px;
+    width: 32%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .texto-medio{
+    width: 80%;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+}
+

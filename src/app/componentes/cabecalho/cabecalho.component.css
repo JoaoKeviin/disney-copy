@@ -1,0 +1,99 @@
+header {
+    top: 0;
+    z-index: 5;
+}
+
+header .header-static {
+    position: relative;
+}
+
+nav {
+    height: 70px;
+    left: 0;
+    padding: 0 36px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateZ(0);
+    transition: opacity .5s ease-in-out;
+    z-index: 10;
+}
+
+nav .header-nav {
+    background-color: transparent;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 3;
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+}
+
+.header-nav ul {
+    justify-content: flex-end;
+}
+
+.header-nav .nav-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-indent: 0;
+    width: 100%;
+}
+
+.header-nav .nav-list li {
+    display: inline-block;
+}
+
+.nav-list .nav-list-item .btn-login {
+    background-color: #000000CC;
+    margin: 5px;
+    padding: 8px 16px;
+    border: 1px solid silver;
+    color: #f9f9f9;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: auto;
+    height: 50px;
+}
+
+.nav-list .nav-list-item .btn-login {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.nav-list .nav-list-item .btn-login:hover {
+    background-color: #f9f9f9;
+    color: #02172a;
+}
+
+.btn-login, .btn-padrao, .btn-premium {
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    transition: all .2s ease 0s;
+    vertical-align: middle;
+}
+
+.btn-padrao:hover, .btn-premium:hover {
+    border: none;
+    filter: brightness(.85);
+    text-decoration: none;
+}
+
+.btn-padrao span, .btn-premium span {
+    margin-top: 3px;
+    font-weight: 400;
+    letter-spacing: 1.76px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+}

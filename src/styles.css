@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #040714;
+    font-family: 'Inspire', sans-serif;
+}
+
+p {
+    margin-top: 24px;
+    color: #c0c0c0;
+    font-size: 15px;
+}
+
+
+section{
+    position: relative;
+    color: white;
+}
+
+picture img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+p span{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 10px;
+    }
+
+    @media (max-width:890px ){
+
+        .container .texto-medio {
+    
+            font-size: 17px;
+        }
+    
+        p{
+            font-size: 10px;
+        }
+    
+        .valor-padrao a, .valor-premium a{
+            padding: 14px 14px;
+        }
+    }
+    
+    @media (max-width: 426px){
+    
+        .content-container img {
+            max-width: 123px;
+        }
+    
+    
+    
+        .nav-list .nav-list-item .btn-login {
+            font-size: 12px;
+            height: 40px;
+        }
+        .content-container .text-title {
+        font-size: 28px;
+        }
+    
+    
+        .content-container .text-subtitle {
+        font-size: 21px;
+        }
+        .btn-padrao, .btn-premium {
+        padding: 8.5px 0px;
+        }
+        .btn-padrao span, .btn-premium span{
+        font-size: 13px;
+        line-height: 13px;
+        }
+    
+        .link-span a {
+            font-size: 10px
+        }
+    
+        .container .texto-medio {
+            font-size: 10px;
+        }
+    
+        p {
+            font-size: 7px;
+        }
+    
+        .container{
+            height: 69%;
+            padding: 1px 17px;
+        }
+    
+        .hint {
+        height: 77px;
+        width: 35px;
+        }
+    
+        .coluna{
+           gap: 24px;
+        }
+    
+        .coluna-caracteristica{
+            justify-content: space-between;
+        }
+        .coluna-caracteristica .selecao{
+        padding: 0px 0px;
+        }
+    
+        .coluna-caracteristica .esporte {
+            width: 19%;
+        }
+    
+        p span{
+            font-size: 6px;
+        }
+    
+        .content-serie-text-title {
+            font-size: 19px;
+        }
+    
+        .content-serie-text-subtitle {
+            font-size: 10px;
+        }
+    
+        .text-serie-container {
+            justify-content: initial;
+        }
+    
+        .container-tela p{
+                font-size: 10px;
+        }
+    
+        .container-faq h2 {
+        font-size: 25px
+        }
+        .accordion-btn {
+        font-size: 13px;
+        }
+        .complex-row{
+            display: block;
+        }
+        
+    }
+    
